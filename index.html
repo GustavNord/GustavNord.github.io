@@ -36,6 +36,24 @@
         document.body.classList.toggle('dark-mode')
         }
         
+        function getFortune() {
+    // create a list of random fortunes
+    const fortunes = [
+        "A pleasant surprise is waiting for you.",
+        "Adventure awaits you around the next corner.",
+        "Your hard work will pay off today.",
+        "You will find a hidden treasure today.",
+        "Your creativity will shine bright today."
+    ];
+    
+    // select a random value from the `fortunes` array
+    const randomIndex = Math.floor(Math.random() * fortunes.length);
+    
+    // post an alert that displays the random fortune
+    alert(fortunes[randomIndex]);
+}
+
+
         // Function to display a welcome message
         function displayWelcomeMessage() {
             const name = prompt("What's your name?");
@@ -62,10 +80,11 @@
     <p>More about me can be found on my <a href="https://medium.com/hackademia/gus-personal-user-manual-466922bf45d6">Medium Post</a></p>
    <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*zDsIwO74TJggVmSI" alt="An older beige Volvo 240" style="width:300px;">
 
-    <h5>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h5>
+    <h5>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h5>
     
     <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-    <button onclick="changeBackgroundColor()">Change Background Color</button> 
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+    <button onclick="getFortune()">Get Your Fortune</button>
 </body>
 </html>
 <!DOCTYPE html>
@@ -96,5 +115,3 @@
         <li><a href="yap.html">My love for Cars</a></li>
     </ul>
 </nav>
-
-</html>
