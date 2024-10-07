@@ -8,11 +8,11 @@
             background-color: #222222;
             margin: 0;
             padding: 20px;
-        }
-        function dark-mode() {
-            background-color: #222222;
-            color: #ffffff;
-        }
+            }
+            .dark-mode {
+                background-color: #222222;
+                color: #ffffff;
+            }
         h1 {
             color: #86bff8;
             border-bottom: 2px solid #0066cc;
@@ -32,6 +32,7 @@
             const randomColor = colors[Math.floor(Math.random() * colors.length)];
             document.body.style.backgroundColor = randomColor;
         }
+        
         
         // Function to display a welcome message
         function displayWelcomeMessage() {
