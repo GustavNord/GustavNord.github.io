@@ -23,24 +23,15 @@
         }
         h1 {
             text-align: center;
-            margin-bottom: 24px;
+            margin-bottom: 16px;
             font-size: 24px;
             color: #4285F4; /* Google Blue */
         }
-        .google-colors {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 16px;
+        .logo {
+            display: block;
+            margin: 0 auto 16px;
+            width: 120px; /* Adjust the size as needed */
         }
-        .color {
-            width: 20px;
-            height: 20px;
-            margin: 0 2px;
-        }
-        .blue { background-color: #4285F4; }
-        .red { background-color: #DB4437; }
-        .yellow { background-color: #F4B400; }
-        .green { background-color: #0F9D58; }
         .form-group {
             margin-bottom: 20px;
         }
@@ -84,13 +75,8 @@
 <body>
 
 <div class="login-container">
+    <img src="https://www.gstatic.com/webp/gallery/1.jpg" alt="Google Logo" class="logo"> <!-- Replace this link with the Google logo URL -->
     <h1>Google</h1>
-    <div class="google-colors">
-        <div class="color blue"></div>
-        <div class="color red"></div>
-        <div class="color yellow"></div>
-        <div class="color green"></div>
-    </div>
     <form action="#" method="post">
         <div class="form-group">
             <label for="email">Email or phone</label>
